@@ -44,6 +44,28 @@ Create the HTML and CSS3 needed to replicate [this exact same picture](https://r
 
 ## You can add different fonts by using free [Google Fonts](https://fonts.google.com/)
 
+## 🔧 Cómo ver la página en el navegador (local / devcontainer)
+
+Si estás trabajando dentro de este contenedor o en un entorno de desarrollo (Codespaces / Gitpod), puedes servir el contenido del repositorio por HTTP y abrirlo en tu navegador:
+
+1. Abre una terminal en la raíz del proyecto `/workspaces/exercise-postcard`.
+2. Ejecuta el servidor estático en el puerto 8000:
+
+```bash
+cd /workspaces/exercise-postcard
+python3 -m http.server 8000
+```
+
+3. Abre en tu navegador la siguiente URL: `http://127.0.0.1:8000`.
+
+Si tu entorno soporta abrir el navegador del host desde el contenedor, también puedes usar la variable de entorno `$BROWSER` así:
+
+```bash
+$BROWSER http://127.0.0.1:8000
+```
+
+En entornos como Codespaces o Gitpod también puedes usar el mecanismo de *port forwarding* (puertos forwards) que ofrece la plataforma para acceder a la página.
+
 1. Click on the font you like.
 
 2. Click get font.
